@@ -1,0 +1,173 @@
+/*------------------------------------------------------------
+Project:        Final Project - 20S_MTM1529_310 Studio Lab II - Intractive Media Management
+Version:        1.0
+Author:         @jgomezt
+Primary use:    Academic Purposes
+Contact:         http://www.twitter.com/jgomezt
+Website:        http://www.jgomezt.com
+
+Content
+1. General
+	1.1 Grid Definition
+2. Header 
+    2.1 Navigation
+    2.2 Personal Mark
+3. Main Content
+	3.1 Sidebar
+4. Footer
+5. Media Queries  ARE GIVEN BY BOOTSTRAP
+
+Colors:
+			Blue:			#2356ff
+			Orange: 		#ff4400
+			Green - light:	#a3d947
+			Green - dark:	#689b10
+			75% Grey:		#636466
+			50% Grey:		#231f20
+			25% Grey:		#c7c8ca
+
+
+Fonts:
+                font-family: 'Quicksand', sans-serif;
+                font-family: 'Raleway', sans-serif;
+                font-family: 'Roboto', sans-serif;
+
+------------------------------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*
+*			2.1 Navigation
+------------------------------------------------------------*/
+.block-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5rem;
+
+}
+
+.fa-linkedin-in, .fa-instagram, .fa-flickr, .fa-pinterest-p, .fa-soundcloud, .fa-youtube {
+    color: #c7c8ca;
+    font-size: 2rem;
+}
+
+
+/*
+*			2.2. Main Container
+------------------------------------------------------------*/
+.list-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-inline li {
+    padding: 20px;
+}
+
+.list-text {
+    list-style-type: circle;
+}
+
+.block-title {
+    margin-top: 10%;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.block-text {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.title-pages {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-weight: 500;
+}
+
+.pages {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.block-img{
+    width: 100%;
+    padding: 25px;;
+}
+
+.jumbotron {
+    background-color: white;
+    padding: 3.5%;
+}
+
+.display-4 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-weight: 500;
+}
+
+.bg-custom-orange {
+    background-color: #ff4400;
+}
+
+.bg-custom-green {
+    background-color: #689b10;
+}
+
+.bg-static-image {
+    background-image: url('../img/holy-mary.jpg');
+	background-color: #dfdfdf;
+	background-blend-mode: overlay;
+	background-attachment: fixed;
+	background-repeat: repeat;
+    background-size: 100%;
+    
+}
+
+.img-resize {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.img-contact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/*
+*			 Footer
+------------------------------------------------------------*/
+
+.card-footer {
+    background-color: #c7c8ca;
+    color:  #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+
+/*
+*			 Additional Media Queries
+------------------------------------------------------------*/
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
